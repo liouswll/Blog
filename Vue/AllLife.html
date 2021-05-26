@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>vue生命周期 | lious的博客</title>
+    <meta name="generator" content="VuePress 1.5.1">
+    
+    <meta name="description" content="前端开发空间站">
+    <link rel="preload" href="/Blog/assets/css/0.styles.16d8b4f8.css" as="style"><link rel="preload" href="/Blog/assets/js/app.4b267237.js" as="script"><link rel="preload" href="/Blog/assets/js/2.b786c2ed.js" as="script"><link rel="preload" href="/Blog/assets/js/47.3f07b151.js" as="script"><link rel="prefetch" href="/Blog/assets/js/10.2ae6b466.js"><link rel="prefetch" href="/Blog/assets/js/11.31a9d7ae.js"><link rel="prefetch" href="/Blog/assets/js/12.2c282eda.js"><link rel="prefetch" href="/Blog/assets/js/13.5fca439e.js"><link rel="prefetch" href="/Blog/assets/js/14.756ffd1d.js"><link rel="prefetch" href="/Blog/assets/js/15.1a77e164.js"><link rel="prefetch" href="/Blog/assets/js/16.13d69f7c.js"><link rel="prefetch" href="/Blog/assets/js/17.e36e30ff.js"><link rel="prefetch" href="/Blog/assets/js/18.bc0ab2ef.js"><link rel="prefetch" href="/Blog/assets/js/19.c99d0774.js"><link rel="prefetch" href="/Blog/assets/js/20.53433eea.js"><link rel="prefetch" href="/Blog/assets/js/21.22b161ae.js"><link rel="prefetch" href="/Blog/assets/js/22.bc2dea31.js"><link rel="prefetch" href="/Blog/assets/js/23.13b92b31.js"><link rel="prefetch" href="/Blog/assets/js/24.6e2310a6.js"><link rel="prefetch" href="/Blog/assets/js/25.fd5eadab.js"><link rel="prefetch" href="/Blog/assets/js/26.fa8763df.js"><link rel="prefetch" href="/Blog/assets/js/27.8bc84815.js"><link rel="prefetch" href="/Blog/assets/js/28.3e51157c.js"><link rel="prefetch" href="/Blog/assets/js/29.5d73ee2c.js"><link rel="prefetch" href="/Blog/assets/js/3.d04c7d68.js"><link rel="prefetch" href="/Blog/assets/js/30.0c752c16.js"><link rel="prefetch" href="/Blog/assets/js/31.2f294ead.js"><link rel="prefetch" href="/Blog/assets/js/32.4f41adf3.js"><link rel="prefetch" href="/Blog/assets/js/33.1f255626.js"><link rel="prefetch" href="/Blog/assets/js/34.8bdcfd32.js"><link rel="prefetch" href="/Blog/assets/js/35.0a0fed36.js"><link rel="prefetch" href="/Blog/assets/js/36.47e56105.js"><link rel="prefetch" href="/Blog/assets/js/37.1ad0406c.js"><link rel="prefetch" href="/Blog/assets/js/38.739f9ae4.js"><link rel="prefetch" href="/Blog/assets/js/39.480902a5.js"><link rel="prefetch" href="/Blog/assets/js/4.1ad58107.js"><link rel="prefetch" href="/Blog/assets/js/40.7181d4e0.js"><link rel="prefetch" href="/Blog/assets/js/41.eeed9852.js"><link rel="prefetch" href="/Blog/assets/js/42.7d0dc463.js"><link rel="prefetch" href="/Blog/assets/js/43.1e44294a.js"><link rel="prefetch" href="/Blog/assets/js/44.126b337c.js"><link rel="prefetch" href="/Blog/assets/js/45.59bfc2c9.js"><link rel="prefetch" href="/Blog/assets/js/46.9fb95f70.js"><link rel="prefetch" href="/Blog/assets/js/48.67dcbf52.js"><link rel="prefetch" href="/Blog/assets/js/49.06145c34.js"><link rel="prefetch" href="/Blog/assets/js/5.c5721a11.js"><link rel="prefetch" href="/Blog/assets/js/50.3a94159c.js"><link rel="prefetch" href="/Blog/assets/js/6.3e933df0.js"><link rel="prefetch" href="/Blog/assets/js/7.55827a4b.js"><link rel="prefetch" href="/Blog/assets/js/8.9a3efc1a.js"><link rel="prefetch" href="/Blog/assets/js/9.9a3b5fa5.js">
+    <link rel="stylesheet" href="/Blog/assets/css/0.styles.16d8b4f8.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/Blog/" class="home-link router-link-active"><!----> <span class="site-name">lious的博客</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/Blog/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><a href="/Blog/JavaScript/" class="nav-link">
+  JavaScript
+</a></div><div class="nav-item"><a href="/Blog/es6/" class="nav-link">
+  ES6
+</a></div><div class="nav-item"><a href="/Blog/Vue/" class="nav-link router-link-active">
+  Vue
+</a></div><div class="nav-item"><a href="/Blog/React/" class="nav-link">
+  React
+</a></div><div class="nav-item"><a href="/Blog/Webpack/" class="nav-link">
+  Webpack
+</a></div><div class="nav-item"><a href="/Blog/git/" class="nav-link">
+  Git
+</a></div><div class="nav-item"><a href="/Blog/Websocket/" class="nav-link">
+  Websocket
+</a></div><div class="nav-item"><a href="/Blog/Http/" class="nav-link">
+  HTTP
+</a></div><div class="nav-item"><a href="/Blog/Difficulties/" class="nav-link">
+  前端难点集中
+</a></div><div class="nav-item"><a href="/Blog/Algorithm/" class="nav-link">
+  前端算法
+</a></div><div class="nav-item"><a href="/Blog/Node/" class="nav-link">
+  Node
+</a></div><div class="nav-item"><a href="/Blog/Plan/" class="nav-link">
+  PLAN
+</a></div><div class="nav-item"><a href="/Blog/Type-Script/" class="nav-link">
+  Type-Script
+</a></div><div class="nav-item"><a href="/Blog/Gu/" class="nav-link">
+  GU
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/Blog/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><a href="/Blog/JavaScript/" class="nav-link">
+  JavaScript
+</a></div><div class="nav-item"><a href="/Blog/es6/" class="nav-link">
+  ES6
+</a></div><div class="nav-item"><a href="/Blog/Vue/" class="nav-link router-link-active">
+  Vue
+</a></div><div class="nav-item"><a href="/Blog/React/" class="nav-link">
+  React
+</a></div><div class="nav-item"><a href="/Blog/Webpack/" class="nav-link">
+  Webpack
+</a></div><div class="nav-item"><a href="/Blog/git/" class="nav-link">
+  Git
+</a></div><div class="nav-item"><a href="/Blog/Websocket/" class="nav-link">
+  Websocket
+</a></div><div class="nav-item"><a href="/Blog/Http/" class="nav-link">
+  HTTP
+</a></div><div class="nav-item"><a href="/Blog/Difficulties/" class="nav-link">
+  前端难点集中
+</a></div><div class="nav-item"><a href="/Blog/Algorithm/" class="nav-link">
+  前端算法
+</a></div><div class="nav-item"><a href="/Blog/Node/" class="nav-link">
+  Node
+</a></div><div class="nav-item"><a href="/Blog/Plan/" class="nav-link">
+  PLAN
+</a></div><div class="nav-item"><a href="/Blog/Type-Script/" class="nav-link">
+  Type-Script
+</a></div><div class="nav-item"><a href="/Blog/Gu/" class="nav-link">
+  GU
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/Blog/Vue/" aria-current="page" class="sidebar-link">基础概念</a></li><li><a href="/Blog/Vue/AllLife.html" aria-current="page" class="active sidebar-link">生命周期</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/Blog/Vue/AllLife.html#vue生命周期" class="sidebar-link">vue生命周期</a></li></ul></li><li><a href="/Blog/Vue/Router.html" class="sidebar-link">路由</a></li><li><a href="/Blog/Vue/Vue3.html" class="sidebar-link">Vue3</a></li><li><a href="/Blog/Vue/vueX.html" class="sidebar-link">vueX</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="vue生命周期"><a href="#vue生命周期" class="header-anchor">#</a> vue生命周期</h2> <ul><li><p>beforeCreate 创建前   created 创建完毕<br>
+在这个生命周期之间，进行初始化事件，进行数据的观测，可以看到在created的时候数据已经和data属性进行绑定（放在data中的属性当值发生改变的同时，视图也会改变）。</p> <blockquote><p>created钩子函数和beforeMount间的生命周期
+首先会判断对象是否有el选项。如果有的话就继续向下编译，如果没有el选项，则停止编译，也就意味着停止了生命周期，直到在该vue实例上调用vm.$mount(el)。此时注释掉代码中:el: '#app',
+然后运行可以看到到created的时候就停止了</p></blockquote></li> <li><p>beforeMount 挂载前 mounted 挂载结束</p></li> <li><p>beforeUpdate 更新前   updated 更新</p></li> <li><p>beforeDestroy 销毁前  destroyed 销毁</p></li></ul> <div class="language- extra-class"><pre class="language-text"><code>&lt;script&gt;
+  var vm = new Vue({
+    el: '#app',
+    data: {
+      message: 'Vue的生命周期'
+    },
+    beforeCreate: function() {
+      console.group('------beforeCreate创建前状态------');
+      console.log(&quot;%c%s&quot;, &quot;color:red&quot; , &quot;el     : &quot; + this.$el); //undefined
+      console.log(&quot;%c%s&quot;, &quot;color:red&quot;,&quot;data   : &quot; + this.$data); //undefined 
+      console.log(&quot;%c%s&quot;, &quot;color:red&quot;,&quot;message: &quot; + this.message) 
+    },
+    created: function() {
+      console.group('------created创建完毕状态------');
+      console.log(&quot;%c%s&quot;, &quot;color:red&quot;,&quot;el     : &quot; + this.$el); //undefined
+      console.log(&quot;%c%s&quot;, &quot;color:red&quot;,&quot;data   : &quot; + this.$data); //已被初始化 
+      console.log(&quot;%c%s&quot;, &quot;color:red&quot;,&quot;message: &quot; + this.message); //已被初始化
+    },
+    beforeMount: function() {
+      console.group('------beforeMount挂载前状态------');
+      console.log(&quot;%c%s&quot;, &quot;color:red&quot;,&quot;el     : &quot; + (this.$el)); //已被初始化
+      console.log(this.$el);
+      console.log(&quot;%c%s&quot;, &quot;color:red&quot;,&quot;data   : &quot; + this.$data); //已被初始化  
+      console.log(&quot;%c%s&quot;, &quot;color:red&quot;,&quot;message: &quot; + this.message); //已被初始化  
+    },
+    mounted: function() {
+      console.group('------mounted 挂载结束状态------');
+      console.log(&quot;%c%s&quot;, &quot;color:red&quot;,&quot;el     : &quot; + this.$el); //已被初始化
+      console.log(this.$el);    
+      console.log(&quot;%c%s&quot;, &quot;color:red&quot;,&quot;data   : &quot; + this.$data); //已被初始化
+      console.log(&quot;%c%s&quot;, &quot;color:red&quot;,&quot;message: &quot; + this.message); //已被初始化 
+    },
+    后四个生命周期 data el 全部已加载
+  })
+&lt;/script&gt;
+&lt;/html&gt;
+</code></pre></div><blockquote><p>vue实例</p></blockquote></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/Blog/Vue/" class="prev router-link-active">
+        基础概念
+      </a></span> <span class="next"><a href="/Blog/Vue/Router.html">
+        路由
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/Blog/assets/js/app.4b267237.js" defer></script><script src="/Blog/assets/js/2.b786c2ed.js" defer></script><script src="/Blog/assets/js/47.3f07b151.js" defer></script>
+  </body>
+</html>
